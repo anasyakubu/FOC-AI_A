@@ -3,6 +3,7 @@ import Nav from '../../components/HomeNav'
 import Image from 'next/image'
 import IMG from '../../../public/img-1.jpg'
 import './HomeHeader.scss'
+import Link from 'next/link'
 
 const HomeHeder = () => {
   return (
@@ -13,15 +14,17 @@ const HomeHeder = () => {
           <div className="p-10 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
             <div className="pl-3 max-w-xl py-24 sm:py-48 lg:py-56 ">
               <div className="text">
-                <h1 className="text-xl font-extrabold tracking-wide shadow-2 sm:text-4xl" style={{ color: '#122231' }}>
-                  Loved by our Customers
+                <h1 className="flex text-xl font-extrabold tracking-wide shadow-2 sm:text-4xl" style={{ color: '#122231' }}>
+                  focGPT <div className="w-6 h-6 rounded-full bg-blue-500"></div>
                 </h1>
                 <p className="mt-6 text-lg leading-8" style={{ color: '#3d4f60' }}>
-                  Stories of happy customers who use Kiddo Alert has helped or is helping to protect for what truly matters to them.
+                  Collaborate with <span className="font-bold text-black">focGPT</span> to brainstorm ideas, spark creativity, and accelerate productivity.
                 </p>
               </div>
               <div className="mt-10">
-                <button className="p-4 mr-5 bg-slate-900 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800">Get Add Yours</button>
+                <Link href="/" className="p-4 mr-5 bg-slate-900 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800">
+                  Sign in
+                </Link>
               </div>
             </div>
 

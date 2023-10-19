@@ -13,10 +13,12 @@ const HomeNav = () => {
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link href="/">FAQs</Link>
+              <Link href="/faqs">FAQs</Link>
             </li>
             <li>
-              <Link href="/">Sign in</Link>
+              <Link href="/" className="p-4 ml-5 bg-slate-900 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800">
+                Sign in
+              </Link>
             </li>
             {/* <li>
               <details>

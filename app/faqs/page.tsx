@@ -5,10 +5,13 @@ import './faqs.scss'
 
 const FAQs = () => {
   return (
-    <div className="FAQs" style={{ backgroundColor: '#f2f7f8', color: '#3d4f60' }}>
+    <div
+      className="FAQs bg-gray-900"
+      // style={{ backgroundColor: '#f2f7f8', color: '#3d4f60' }}
+    >
       <HomeNav />
       <div className="text-center p-10">
-        <div className="m-10 p-10 rounded-xl shadow-xl bg-white">
+        <div className="m-10 p-10 rounded-xl shadow-xl bg-gray-950">
           <div className="text-center">
             <h1 className="flex text-xl font-extrabold tracking-wide shadow-2 sm:text-4xl" style={{ color: '#122231' }}>
               focGPT <div className="w-6 h-6 rounded-full bg-blue-500"></div>
@@ -16,7 +19,7 @@ const FAQs = () => {
           </div>
 
           <div className="mt-10">
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title text-md font-medium text-white">What’s focGPT?</div>
               <div className="collapse-content text-left">
@@ -35,7 +38,7 @@ const FAQs = () => {
               </div>
             </div>
 
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow  bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title  text-md font-medium text-white">Why can focGPT get things wrong?</div>
               <div className="collapse-content text-left">
@@ -58,7 +61,7 @@ const FAQs = () => {
               </div>
             </div>
 
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow  bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title  text-md font-medium text-white">How and when does focGPT cite sources in its responses?</div>
               <div className="collapse-content text-left">
@@ -81,7 +84,7 @@ const FAQs = () => {
               </div>
             </div>
 
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow  bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title  text-md font-medium text-white">Who can use focGPT?</div>
               <div className="collapse-content text-left">
@@ -100,7 +103,7 @@ const FAQs = () => {
               </div>
             </div>
 
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title  text-md font-medium text-white">How can I help make focGPT better?</div>
               <div className="collapse-content text-left">
@@ -119,7 +122,7 @@ const FAQs = () => {
               </div>
             </div>
 
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow  bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title  text-md font-medium text-white">How many languages does focGPT support?</div>
               <div className="collapse-content text-left">
@@ -138,7 +141,7 @@ const FAQs = () => {
               </div>
             </div>
 
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow  bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title  text-md font-medium text-white">What terms of service apply to my focGPT usage?</div>
               <div className="collapse-content text-left">
@@ -157,7 +160,7 @@ const FAQs = () => {
               </div>
             </div>
 
-            <div className="collapse mt-1 collapse-arrow bg-base-200">
+            <div className="collapse mt-1 collapse-arrow  bg-gray-900">
               <input type="radio" name="my-accordion-2" />
               <div className="collapse-title  text-md font-medium text-white">Can focGPT connect with other Google apps & services?</div>
               <div className="collapse-content text-left">

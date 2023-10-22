@@ -18,7 +18,7 @@ const HomeNav = () => {
               </Link>
             </li>
             <li>
-              <Link href="/" className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800">
+              <Link href="/ask" className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800">
                 Sign in
               </Link>
             </li>

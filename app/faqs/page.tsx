@@ -10,6 +10,14 @@ const FAQs = () => {
       // style={{ backgroundColor: '#f2f7f8', color: '#3d4f60' }}
     >
       <HomeNav />
+
+      {/* <div className="">
+        {' '}
+        <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+          Anas Yakubu
+        </h1>
+      </div> */}
+
       <div className="text-center p-10">
         <div className="m-10 p-10 rounded-xl shadow-xl bg-gray-950">
           <div className="text-center">

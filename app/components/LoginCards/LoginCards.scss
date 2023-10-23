@@ -1,0 +1,84 @@
+.LoginBetaCard {
+  // background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding-top: 5%;
+
+  .img {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the image takes up the full height of the parent */
+    
+    img {
+      max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+      min-height: 100px; /* Ensure the image doesn't exceed its container's height */
+    }
+  }
+
+  .border-black {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+
+    &:focus {
+      --tw-bg-opacity: 1;
+      border-color: rgb(37 99 235 / var(--tw-bg-opacity));
+    }
+  }
+  
+  .hoverBtn{
+    transition: .4s all ease-in;
+
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .lg:grid {
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Vertically center the card in mobile view */
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center within the viewport height */
+
+    .img {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100%; /* Ensure the image takes up the full height of the parent */
+      
+      img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+        max-height: 100px; /* Ensure the image doesn't exceed its container's height */
+      }
+    }
+  }
+
+  /* Center the content in tablet view */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .lg:grid {
+      justify-content: center;
+    }
+  }
+
+  /* Add any other responsive styles here as needed */
+}

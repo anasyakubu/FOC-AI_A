@@ -40,7 +40,7 @@ const QuestionForm = () => {
       <form onSubmit={handleSubmit}>
         <label>
           Ask a Question:
-          <input type="text" value={question} onChange={(e) => setQuestion(e.target.value)} />
+          <input className="text-black bg-white" type="text" value={question} onChange={(e) => setQuestion(e.target.value)} />
         </label>
         <button type="submit">Submit</button>
       </form>

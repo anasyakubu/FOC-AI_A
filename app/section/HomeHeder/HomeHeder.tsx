@@ -32,7 +32,7 @@ const HomeHeder = () => {
                   // style={{ color: '#3d4f60' }}
                 >
                   Collaborate with{" "}
-                  <span className="font-bold text-black">focGPT</span> to
+                  <span className="font-bold text-blue-600">focGPT</span> to
                   brainstorm ideas, spark creativity, and accelerate
                   productivity.
                 </p>

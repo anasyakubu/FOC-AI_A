@@ -36,7 +36,7 @@ const QuestionForm = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <form onSubmit={handleSubmit}>
         <label>
           Ask a Question:

@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../public/logo.png";
 
 const HomeNav = () => {
   return (
@@ -7,7 +9,10 @@ const HomeNav = () => {
       <div className="navbar bg-transparent" style={{ color: "#122231" }}>
         <div className="flex-1">
           <Link href="/" className="flex p-5 normal-case text-white text-xl">
-            focGPT <div className="w-6 h-6 rounded-full bg-blue-500"></div>
+            focGPT{" "}
+            <div className="w-10 h-10 rounded-full">
+              <Image src={Logo} alt="Logo" />
+            </div>
           </Link>
         </div>
         <div className="flex-none">

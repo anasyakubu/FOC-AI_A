@@ -1,9 +1,10 @@
-import React from 'react'
-import Nav from '../../components/HomeNav'
-import Image from 'next/image'
-import IMG from '../../../public/img-1.jpg'
-import './HomeHeader.scss'
-import Link from 'next/link'
+import React from "react";
+import Nav from "../../components/HomeNav";
+import Image from "next/image";
+import IMG from "../../../public/Chat bot-rafiki.svg";
+import "./HomeHeader.scss";
+import Link from "next/link";
+import Logo from "../../../public/logo.png";
 
 const HomeHeder = () => {
   return (
@@ -21,17 +22,26 @@ const HomeHeder = () => {
                   className="flex text-xl font-extrabold tracking-wide shadow-2 sm:text-4xl text-white"
                   //  style={{ color: '#122231' }}
                 >
-                  focGPT <div className="w-6 h-6 rounded-full bg-blue-500"></div>
+                  focGPT{" "}
+                  <div className="w-14 h-14 rounded-full">
+                    <Image src={Logo} alt="Logo" />
+                  </div>
                 </h1>
                 <p
                   className="mt-6 text-lg leading-8 text-gray-300"
                   // style={{ color: '#3d4f60' }}
                 >
-                  Collaborate with <span className="font-bold text-black">focGPT</span> to brainstorm ideas, spark creativity, and accelerate productivity.
+                  Collaborate with{" "}
+                  <span className="font-bold text-black">focGPT</span> to
+                  brainstorm ideas, spark creativity, and accelerate
+                  productivity.
                 </p>
               </div>
               <div className="mt-10">
-                <Link href="/ask" className="p-4 mr-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800">
+                <Link
+                  href="/ask"
+                  className="p-4 mr-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800"
+                >
                   Sign in
                 </Link>
               </div>
@@ -39,14 +49,14 @@ const HomeHeder = () => {
 
             {/* <Fade direction="left"> */}
             <div className="text-center flex justify-center items-center">
-              <Image className="Img rounded-2xl shadow-lg" src={IMG} alt="" />
+              <Image className="Img rounded-2xl" src={IMG} alt="" />
             </div>
             {/* </Fade> */}
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HomeHeder
+export default HomeHeder;

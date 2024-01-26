@@ -55,11 +55,11 @@ const AskForm = () => {
               <p className="mt-4 text-lg leading-8 text-gray-300 text-left">
                 Tell me what`s on your mind, or pick a suggestion.
               </p>
-              <div className="mt-6 flex max-w-md gap-x-4">
-                {/* <label htmlFor="email-address" className="sr-only">
+              <form>
+                <div className="mt-6 flex max-w-md gap-x-4">
+                  {/* <label htmlFor="email-address" className="sr-only">
                   Email address
                 </label> */}
-                <form onSubmit={handleSubmit}>
                   <input
                     type="text"
                     value={question}
@@ -74,8 +74,8 @@ const AskForm = () => {
                   >
                     <SiMinutemailer />
                   </button>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
             <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
               <div className="flex flex-col items-start">
@@ -104,7 +104,7 @@ const AskForm = () => {
           </div>
         </div>
         <div className="mt-10">
-          <h2>Answer : {answer}</h2>
+          <h2>Ans : {answer}</h2>
         </div>
         <div
           className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"

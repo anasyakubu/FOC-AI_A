@@ -23,13 +23,17 @@ const HomeNav = () => {
                 FAQs
               </Link>
             </li>
-            <li>
-              <SignedIn>
-                <Link className="text-white" href="/faqs">
+            <SignedIn>
+              <li>
+                <Link className="text-white" href="/ask">
                   Ask
                 </Link>
-              </SignedIn>
-            </li>
+              </li>
+              <li>
+                <UserButton afterSignOutUrl="/" />
+              </li>
+            </SignedIn>
+
             <SignedOut>
               <Link
                 className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800"

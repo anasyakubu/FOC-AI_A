@@ -36,7 +36,7 @@ const HomeNav = () => {
 
             <SignedOut>
               <Link
-                className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800"
+                className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-blue-800"
                 href="/sign-in"
               >
                 Login

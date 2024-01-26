@@ -40,9 +40,9 @@ const HomeHeder = () => {
               <div className="mt-10">
                 <Link
                   href="/ask"
-                  className="p-4 mr-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800"
+                  className="p-4 mr-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-blue-800"
                 >
-                  Sign in
+                  Get Started Now
                 </Link>
               </div>
             </div>

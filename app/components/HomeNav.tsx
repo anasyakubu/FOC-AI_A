@@ -30,6 +30,14 @@ const HomeNav = () => {
                 </Link>
               </SignedIn>
             </li>
+            <SignedOut>
+              <Link
+                className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800"
+                href="/sign-in"
+              >
+                Login
+              </Link>
+            </SignedOut>
             {/* <li>
               <Link
                 href="/login"

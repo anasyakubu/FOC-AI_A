@@ -1,5 +1,7 @@
 import React from "react";
 import QuestionForm from "../components/questionForm";
+import AskForm from "../components/AskForm";
+import HomeNav from "../components/HomeNav";
 
 const Ask = () => {
   return (
@@ -8,8 +10,12 @@ const Ask = () => {
       style={{ height: "100vh" }}
     >
       <div className="bg-gray-800">
-        <h1 className="text-white">Question and Answer App</h1>
-        <QuestionForm />
+        <div className="">
+          <HomeNav />
+        </div>
+        {/* <h1 className="text-white">Question and Answer App</h1> */}
+        {/* <QuestionForm /> */}
+        <AskForm />
       </div>
     </div>
   );

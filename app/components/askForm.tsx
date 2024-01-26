@@ -1,24 +1,29 @@
 import React from "react";
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
+import Logo from "../../public/logo.png";
 
-const askForm = () => {
+const AskForm = () => {
   return (
-    <div className="askForm">
-      <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+    <div className="AskForm">
+      <div
+        className="relative isolate overflow-hidden bg-gray-900 py-8 sm:py-16 lg:py-24"
+        style={{ height: "100vh" }}
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div className="max-w-xl lg:max-w-lg">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Subscribe to our newsletter.
+              <h2 className="flex text-lg font-bold tracking-tight text-white sm:text-lg">
+                <Image src={Logo} alt="Logo" width={80} />{" "}
+                <span> How can I help you today?</span>
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-300">
-                Nostrud amet eu ullamco nisi aute in ad minim nostrud
-                adipisicing velit quis. Duis tempor incididunt dolore.
+                Tell me what`s on your mind, or pick a suggestion.
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">
-                <label htmlFor="email-address" className="sr-only">
+                {/* <label htmlFor="email-address" className="sr-only">
                   Email address
-                </label>
+                </label> */}
                 <input
                   id="email-address"
                   name="email"
@@ -26,7 +31,7 @@ const askForm = () => {
                   autoComplete="email"
                   required
                   className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                  placeholder="Enter your email"
+                  placeholder="Enter a Prompt Here"
                 />
                 <button
                   type="submit"
@@ -68,6 +73,9 @@ const askForm = () => {
             </dl>
           </div>
         </div>
+        <div className="mt-10">
+          <h2>Footer</h2>
+        </div>
         <div
           className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
           aria-hidden="true"
@@ -85,4 +93,4 @@ const askForm = () => {
   );
 };
 
-export default askForm;
+export default AskForm;

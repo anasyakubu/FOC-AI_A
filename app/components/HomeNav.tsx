@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const HomeNav = () => {
   return (
@@ -23,25 +24,19 @@ const HomeNav = () => {
               </Link>
             </li>
             <li>
+              <SignedIn>
+                <Link className="text-white" href="/faqs">
+                  Ask
+                </Link>
+              </SignedIn>
+            </li>
+            {/* <li>
               <Link
                 href="/login"
                 className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-slate-800"
               >
                 Sign in
               </Link>
-            </li>
-            {/* <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2 bg-white text-black">
-                  <li>
-                    <a>Link 1</a>
-                  </li>
-                  <li>
-                    <a>Link 2</a>
-                  </li>
-                </ul>
-              </details>
             </li> */}
           </ul>
         </div>

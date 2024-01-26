@@ -19,13 +19,13 @@ const HomeNav = () => {
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link className="text-white" href="/faqs">
+              <Link className="text-white bg-transparent" href="/faqs">
                 FAQs
               </Link>
             </li>
             <SignedIn>
               <li>
-                <Link className="text-white" href="/ask">
+                <Link className="text-white bg-transparent" href="/ask">
                   Ask
                 </Link>
               </li>
@@ -36,7 +36,7 @@ const HomeNav = () => {
 
             <SignedOut>
               <Link
-                className="p-4 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-blue-800"
+                className="p-2 ml-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-blue-800"
                 href="/sign-in"
               >
                 Login

@@ -42,7 +42,7 @@ const HomeHeder = () => {
                   href="/ask"
                   className="p-4 mr-5 bg-blue-600 pl-5 pr-5 text-white font-medium rounded-lg hover:bg-blue-800"
                 >
-                  Get Started Now
+                  Enter a Prompt Here
                 </Link>
               </div>
             </div>

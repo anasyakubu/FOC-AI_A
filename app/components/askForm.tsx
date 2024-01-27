@@ -99,7 +99,7 @@ const AskForm = () => {
           </div>
         </div>
         <div className="mt-10">
-          <h2>Ans : {answer}</h2>
+          <h2 className="text-white">Ans : {answer}</h2>
         </div>
         <div
           className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"

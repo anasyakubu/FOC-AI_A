@@ -2,13 +2,18 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
-import { SiMinutemailer } from "react-icons/si";
+import { SiMinutemailer, SiAnswer } from "react-icons/si";
 import { FaBrain } from "react-icons/fa";
-import { TfiWrite } from "react-icons/tfi";
+// import { TfiWrite } from "react-icons/tfi";
 
 const QuestionForm = () => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
+  // const [isDivVisible, setIsDivVisible] = useState(false);
+  const [answerText, setAnswerText] = useState("Answer");
+  const changeAnswerText = () => {
+    setAnswerText("Your Answer");
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,6 +36,8 @@ const QuestionForm = () => {
       const response = await fetch(url, options);
       const result = await response.json(); // Parse the response as JSON
       const answerText = result.result; // Extract the answer from the JSON object
+      const toggleDivVisibility = () => {}; // Toggle visibility
+      changeAnswerText(); // change the answer text
       setAnswer(answerText);
     } catch (error) {
       console.error(error);
@@ -73,6 +80,20 @@ const QuestionForm = () => {
               </form>
             </div>
             <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+              <div className="">
+                <div className="flex flex-col items-start">
+                  <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                    <SiAnswer
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <dt className="mt-4 font-semibold text-white">Answer</dt>
+                  <dd className="mt-2 leading-7 text-gray-400 text-left">
+                    {answer}
+                  </dd>
+                </div>
+              </div>
               <div className="flex flex-col items-start">
                 <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                   <FaBrain className="h-6 w-6 text-white" aria-hidden="true" />
@@ -83,23 +104,13 @@ const QuestionForm = () => {
                   program? I work at a small bookstore.
                 </dd>
               </div>
-              <div className="flex flex-col items-start">
-                <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                  <TfiWrite className="h-6 w-6 text-white" aria-hidden="true" />
-                </div>
-                <dt className="mt-4 font-semibold text-white">
-                  Write an Email
-                </dt>
-                <dd className="mt-2 leading-7 text-gray-400 text-left">
-                  Write a short email to my professor requesting a deadline
-                  extension for my project.
-                </dd>
-              </div>
             </dl>
           </div>
         </div>
         <div className="mt-10">
-          <h2 className="text-white">Ans : {answer}</h2>
+          <h2 className="text-white">
+            {answerText} : {answer}
+          </h2>
         </div>
         <div
           className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"

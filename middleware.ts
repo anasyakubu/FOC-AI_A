@@ -7,11 +7,9 @@ export default authMiddleware({
   publicRoutes: [
     "/",
     "/faqs",
-    // "/events/:id",
-    // "api/webhook/clerk",
-    // "api/webhook/stripe",
-    // "api/uploadthing",
+    // This is a public route
   ],
+  //ignoredRoutes: ["/((?!api|trpc))(_next.*|.+.[w]+$)", "/ask"],
   // ignoredRoutes: ["api/webhook/clerk", "api/webhook/stripe", "api/uploadthing"],
 });
 

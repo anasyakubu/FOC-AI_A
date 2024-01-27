@@ -1,6 +1,7 @@
 import React from "react";
 import HomeNav from "../components/HomeNav";
-import AskForm from "../components/AskForm";
+// import AskForm from "../components/AskForm";
+import QuestionForm from "../components/questionForm";
 
 const Ask = () => {
   return (
@@ -13,8 +14,8 @@ const Ask = () => {
           <HomeNav />
         </div>
         {/* <h1 className="text-white">Question and Answer App</h1> */}
-        {/* <QuestionForm /> */}
-        <AskForm />
+        <QuestionForm />
+        {/* <AskForm /> */}
       </div>
     </div>
   );

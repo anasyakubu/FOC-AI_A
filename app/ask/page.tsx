@@ -1,5 +1,4 @@
 import React from "react";
-// import QuestionForm from "../components/questionForm";
 import HomeNav from "../components/HomeNav";
 import AskForm from "../components/AskForm";
 

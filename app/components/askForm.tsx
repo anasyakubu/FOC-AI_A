@@ -56,9 +56,6 @@ const AskForm = () => {
               </p>
               <form onSubmit={handleSubmit}>
                 <div className="mt-6 flex max-w-md gap-x-4">
-                  {/* <label htmlFor="email-address" className="sr-only">
-                  Email address
-                </label> */}
                   <input
                     type="text"
                     value={question}

@@ -1,5 +1,5 @@
-import Footer from './section/Footer/Footer'
-import HomeHeder from './section/HomeHeder/HomeHeder'
+import Footer from "./section/Footer/Footer";
+import HomeHeder from "./section/HomeHeder/HomeHeder";
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
       <HomeHeder />
       <Footer />
     </div>
-  )
+  );
 }

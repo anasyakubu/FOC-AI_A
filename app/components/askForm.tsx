@@ -18,7 +18,7 @@ const AskForm = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-RapidAPI-Key": process.env.X_RapidAPI_Key, // Replace with your actual RapidAPI key
+        "X-RapidAPI-Key": process.env.X_RAPIDAPI_KEY, // Replace with your actual RapidAPI key
         "X-RapidAPI-Host": "open-ai21.p.rapidapi.com",
       },
       body: JSON.stringify({
